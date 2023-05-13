@@ -1,3 +1,4 @@
 @Library('rakesh-shared-library') _
 
-nodejs('cart')
+env.COMPONENT="cart"
+nodejs()
