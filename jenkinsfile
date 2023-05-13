@@ -15,7 +15,7 @@ pipeline {
 
         stage ('Downloading the dependencies') {
             steps {
-            ssh "npm install"
+                sh "npm install"
            }
         }
     }
