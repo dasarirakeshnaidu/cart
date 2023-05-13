@@ -1,22 +1,3 @@
 @Library('rakesh-shared-library') _
 
-pipeline {
-      agent any 
-      stages { 
-
-        stage( 'Performing lint checks') {
-            steps {
-                script {
-                    nodejs.lintChecks()
-                }
-                    
-           }
-       }
-
-        stage ('Downloading the dependencies') {
-            steps {
-                sh "npm install"
-           }
-        }
-    }
-}
+nodejs('cart')
